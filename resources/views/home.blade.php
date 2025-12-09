@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>welcome to home</h1>
+    <h1>welcome to Kodeeo Limited</h1>
 </body>
 </html>
