@@ -17,4 +17,9 @@ class HomeController extends Controller
         return view('about-us');
     }
 
+    public function tourPost()
+    {
+        return view('tour-post');
+    }
+
 }
