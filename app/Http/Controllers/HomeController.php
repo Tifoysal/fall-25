@@ -6,20 +6,17 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    
     public function home()
     {
-        return view('home');
-    }
-
-    public function aboutUs()
-    {
-        return view('about-us');
+        return view('pages.home');    
     }
 
     public function tourPost()
     {
-        return view('tour-post');
+        return view('pages.tour-post');
     }
 
+    public function tourJoin(){
+        return view('pages.tour-join');
+    }
 }
