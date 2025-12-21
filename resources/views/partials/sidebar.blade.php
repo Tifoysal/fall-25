@@ -13,20 +13,71 @@
                             </li>
 
                             <li class="nav-item"> 
-                                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="{{route('tour.post')}}"> <svg class="bi" aria-hidden="true">
+                                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="{{route('category.list')}}"> <svg class="bi" aria-hidden="true">
                                         <use xlink:href="#house-fill"></use>
                                     </svg>
-                                    Tour post
+                                   Categories
                                 </a> 
                             </li>
-                             <li class="nav-item"> 
-                                
-                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="{{route('tour.join')}}"> <svg class="bi" aria-hidden="true">
+
+
+                             <li class="nav-item">   
+                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href=""> <svg class="bi" aria-hidden="true">
                                         <use xlink:href="#house-fill"></use>
                                     </svg>
-                                    Tour Join
+                                    Products
                                 </a> 
                             </li>
+
+
+                            <li class="nav-item">   
+                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href=""> <svg class="bi" aria-hidden="true">
+                                        <use xlink:href="#house-fill"></use>
+                                    </svg>
+                                    Customers
+                                </a> 
+                            </li>
+
+                            <li class="nav-item">   
+                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href=""> <svg class="bi" aria-hidden="true">
+                                        <use xlink:href="#house-fill"></use>
+                                    </svg>
+                                    Orders
+                                </a> 
+                            </li>
+
+                            <li class="nav-item">   
+                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href=""> <svg class="bi" aria-hidden="true">
+                                        <use xlink:href="#house-fill"></use>
+                                    </svg>
+                                    Payments
+                                </a> 
+                            </li>
+
+                            <li class="nav-item">   
+                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href=""> <svg class="bi" aria-hidden="true">
+                                        <use xlink:href="#house-fill"></use>
+                                    </svg>
+                                    Reports
+                                </a> 
+                            </li>
+
+                            <li class="nav-item">   
+                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href=""> <svg class="bi" aria-hidden="true">
+                                        <use xlink:href="#house-fill"></use>
+                                    </svg>
+                                    Users
+                                </a> 
+                            </li>
+
+                            <li class="nav-item">   
+                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href=""> <svg class="bi" aria-hidden="true">
+                                        <use xlink:href="#house-fill"></use>
+                                    </svg>
+                                    Settings
+                                </a> 
+                            </li>
+
 
                             
                             

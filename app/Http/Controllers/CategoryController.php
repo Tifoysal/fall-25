@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class CategoryController extends Controller
+{
+     public function list()
+     {
+        return view('pages.category.list');   
+     }
+
+
+     public function createForm()
+     {
+        return view('pages.category.form');   
+     }
+}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -9,6 +10,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[HomeController::class,'home']);
 
-Route::get('/tour-post',[HomeController::class,'tourPost'])->name('tour.post');
+Route::get('/category/list',[CategoryController::class,'list'])->name('category.list');
 
-Route::get('/tour-join',[HomeController::class,'tourJoin'])->name('tour.join');
+Route::get('/category/create-form',[CategoryController::class,'createForm'])->name('category.create.form');
