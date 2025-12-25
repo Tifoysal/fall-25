@@ -16,4 +16,14 @@ class CategoryController extends Controller
      {
         return view('pages.category.form');   
      }
+
+
+     public function storeCategory(Request $request)
+     {
+      
+      dd($request->all());
+
+
+
+     }
 }
