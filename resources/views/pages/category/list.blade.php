@@ -13,29 +13,30 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Category Name</th>
+        <th scope="col">Category Description</th>
         <th scope="col">Status</th>
         <th scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
+
+    @foreach($puddingBox as $pudding) 
+
       <tr>
-        <th scope="row">1</th>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <th scope="row">{{$pudding->id}}</th>
+        <td>{{ $pudding->name }}</td>
+        <td>{{ $pudding->description }}</td>
+        <td>{{ $pudding->status }}</td>
+        <td>
+          <a href="" class="btn btn-primary">View</a>
+          <a href="" class="btn btn-warning">Edit</a>
+          <a href="" class="btn btn-danger">Delete</a>
+        </td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jane</td>
-        <td>Doe</td>
-        <td>jane@example.com</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
+
+    @endforeach
+ 
+
     </tbody>
   </table>
 </div>
