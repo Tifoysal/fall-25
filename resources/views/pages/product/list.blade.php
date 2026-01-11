@@ -23,15 +23,17 @@
     </thead>
     <tbody>
 
+@foreach($allProducts as $singleProduct)
 
       <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <th scope="row">{{$singleProduct->id}}</th>
+        <td>{{$singleProduct->name}}</td>
+        <td>test</td>
+        <td>{{$singleProduct->description}}</td>
+        <td>{{$singleProduct->price}}</td>
+        <td>{{$singleProduct->stock}}</td>
+        <td>{{$singleProduct->status}}</td>
+        
         <td>
           <a href="" class="btn btn-primary">View</a>
           <a href="" class="btn btn-warning">Edit</a>
@@ -39,6 +41,7 @@
         </td>
       </tr>
 
+@endforeach
  
 
     </tbody>

@@ -5,15 +5,16 @@
 
 <!-- name ,status, image, description -->
 
-<form action=" " method="post">
+<form action="{{route('product.store')}}" method="post">
 
 @csrf
 
-  <div class="form-group">
+<div class="form-group">
     <label for="name">Enter Product Name</label>
     <input name="product_name" placeholder="Enter Product Name here.." type="text" class="form-control" id="name" aria-describedby="emailHelp">
     
   </div>
+  <label for="name">Select Category</label>
 
   <select class="form-select" aria-label="Default select example">
   <option selected>Select Category</option>

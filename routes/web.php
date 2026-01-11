@@ -20,3 +20,5 @@ Route::post('/category/submit',[CategoryController::class,'storeCategory'])->nam
 Route::get('/products/list',[ProductController::class,'list'])->name('products.list');
 
 Route::get('/product/form',[ProductController::class,'create'])->name('product.create');
+
+Route::post('/product/store',[ProductController::class,'store'])->name('product.store');

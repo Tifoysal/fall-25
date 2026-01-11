@@ -10,9 +10,9 @@ class ProductController extends Controller
 {
     public function list(){
         
-        // $products = Product::all();
+        $allProducts = Product::all();
 
-        return view('pages.product.list');
+        return view('pages.product.list',compact('allProducts'));
     }
 
 
@@ -22,5 +22,20 @@ class ProductController extends Controller
         $categories= Category::all();
         
         return view('pages.product.create',compact('categories'));
+    }
+
+    public function store(Request $request)
+    {
+
+       Product::create([
+            'name' => $request->product_name,
+            'description' => $request->product_description,
+            'price' => $request->product_price,
+            'stock' => $request->product_stock,
+            'stock' => $request->product_stock,
+       ]);
+
+       return redirect()->route('products.list');
+        
     }
 }
