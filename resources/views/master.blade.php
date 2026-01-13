@@ -19,6 +19,7 @@
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
     <link href="https://getbootstrap.com/docs/5.3/examples/dashboard/dashboard.css" rel="stylesheet">
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -101,12 +102,16 @@
             display: block !important
         }
     </style>
+
+
+
+@notifyCss
+<style type="text/css"> .notify{ z-index: 1000000; margin-top: 5%; color: black !important;  } </style>
+
+
 </head>
 
 <body> 
-    
-   
-   
 
 
 @include('partials.header')
@@ -122,6 +127,8 @@
                
                 <div class="table-responsive small">
                     
+                <x-notify::notify />
+
 
                @yield('content')
 
@@ -133,6 +140,9 @@
     <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"  class="astro-vvvwv3sm"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js"  class="astro-vvvwv3sm"></script>
     <script src="https://getbootstrap.com/docs/5.3/examples/dashboard/dashboard.js" class="astro-vvvwv3sm"></script>
+
+    @notifyJs
+
 </body>
 
 </html>

@@ -16,11 +16,11 @@
   </div>
   <label for="name">Select Category</label>
 
-  <select class="form-select" aria-label="Default select example">
-  <option selected>Select Category</option>
+  <select class="form-select" aria-label="Default select example" name="category_id">
+  <option selected value="">Select Category</option>
     @foreach($categories as $cat)
 
-    <option value="1">{{$cat->name}}</option>
+    <option value="{{$cat->id}}">{{$cat->name}}</option>
 
     @endforeach
 </select>

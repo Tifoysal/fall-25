@@ -22,3 +22,5 @@ Route::get('/products/list',[ProductController::class,'list'])->name('products.l
 Route::get('/product/form',[ProductController::class,'create'])->name('product.create');
 
 Route::post('/product/store',[ProductController::class,'store'])->name('product.store');
+
+Route::get('/product/delete/{p_id}',[ProductController::class,'delete'])->name('product.delete');

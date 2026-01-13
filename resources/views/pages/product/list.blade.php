@@ -28,7 +28,7 @@
       <tr>
         <th scope="row">{{$singleProduct->id}}</th>
         <td>{{$singleProduct->name}}</td>
-        <td>test</td>
+        <td>{{$singleProduct->category_id}}</td>
         <td>{{$singleProduct->description}}</td>
         <td>{{$singleProduct->price}}</td>
         <td>{{$singleProduct->stock}}</td>
@@ -37,7 +37,7 @@
         <td>
           <a href="" class="btn btn-primary">View</a>
           <a href="" class="btn btn-warning">Edit</a>
-          <a href="" class="btn btn-danger">Delete</a>
+          <a href="{{route('product.delete',$singleProduct->id )}}" class="btn btn-danger">Delete</a>
         </td>
       </tr>
 
