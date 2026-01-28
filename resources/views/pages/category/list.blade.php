@@ -20,15 +20,15 @@
     </thead>
     <tbody>
 
-    @foreach($puddingBox as $pudding) 
+    @foreach($puddingBox as $category) 
 
       <tr>
-        <th scope="row">{{$pudding->id}}</th>
-        <td>{{ $pudding->name }}</td>
-        <td>{{ $pudding->description }}</td>
-        <td>{{ $pudding->status }}</td>
+        <th scope="row">{{$category->id}}</th>
+        <td>{{ $category->name }}</td>
+        <td>{{ $category->description }}</td>
+        <td>{{ $category->status }}</td>
         <td>
-          <a href="" class="btn btn-primary">View</a>
+          <a href="{{route('category.view',$category->id)}}" class="btn btn-primary">View</a>
           <a href="" class="btn btn-warning">Edit</a>
           <a href="" class="btn btn-danger">Delete</a>
         </td>

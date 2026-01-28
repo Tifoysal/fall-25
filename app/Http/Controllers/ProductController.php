@@ -54,4 +54,13 @@ class ProductController extends Controller
 
 
     }
+
+    public function viewProduct($id) 
+    {
+
+        $product= Product::find($id);
+
+        return view('pages.product.view', compact('product'));
+        
+    }
 }

@@ -35,7 +35,7 @@
         <td>{{$singleProduct->status}}</td>
         
         <td>
-          <a href="" class="btn btn-primary">View</a>
+          <a href="{{route('product.view',$singleProduct->id)}}" class="btn btn-primary">View</a>
           <a href="" class="btn btn-warning">Edit</a>
           <a href="{{route('product.delete',$singleProduct->id )}}" class="btn btn-danger">Delete</a>
         </td>
