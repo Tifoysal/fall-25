@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/login',[AuthController::class,'loginForm'])->name('login');
 
+Route::post('/login/submit',[AuthController::class,'loginSubmit'])->name('login.submit');
+
 Route::group(['middleware'=>'auth'],function(){
 
-    Route::get('/',[HomeController::class,'home']);
+    Route::get('/',[HomeController::class,'home'])->name('home');
 
     Route::get('/category/list',[CategoryController::class,'list'])->name('category.list');
     
