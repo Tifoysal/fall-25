@@ -33,12 +33,13 @@
           <a href="" class="btn btn-danger">Delete</a>
         </td>
       </tr>
-
     @endforeach
  
 
     </tbody>
   </table>
+  {{$puddingBox->links()}}
+
 </div>
 
 @endsection

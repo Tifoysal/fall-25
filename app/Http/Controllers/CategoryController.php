@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
 {
      public function list()
      {
 
-      $puddingBox = Category::all();
+      $puddingBox = Category::paginate(10);
 
       return view('pages.category.list', compact('puddingBox'));   
      }
@@ -24,6 +25,21 @@ class CategoryController extends Controller
 
      public function storeCategory(Request $request)
      {
+
+      $validation=Validator::make($request->all(),[
+         'c_name'=>'required',
+         'c_description'=>'required',
+      ]);
+
+      if($validation->fails())
+      {
+         
+         // Display a success toast with no title
+         toastr()->error("Please fill all the fields correctly!");
+         return redirect()->back();
+      }
+
+
 
       // dd($request->all());
    //model function  - Eloquent ORM

@@ -11,12 +11,12 @@
 
   <div class="form-group">
     <label for="name">Enter Category Name</label>
-    <input name="c_name" placeholder="Enter Category Name here.." type="text" class="form-control" id="name" aria-describedby="emailHelp">
+    <input required name="c_name" placeholder="Enter Category Name here.." type="text" class="form-control" id="name" aria-describedby="emailHelp">
     
   </div>
   <div class="form-group">
     <label for="desc">Enter description</label>
-    <input name="c_description" type="text" class="form-control" id="desc">
+    <input required name="c_description" type="text" class="form-control" id="desc">
   </div>
 
     <div class="form-group">
