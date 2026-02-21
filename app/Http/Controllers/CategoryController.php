@@ -35,7 +35,7 @@ class CategoryController extends Controller
       {
          
          // Display a success toast with no title
-         toastr()->error("Please fill all the fields correctly!");
+         toastr()->error($validation->errors()->first());
          return redirect()->back();
       }
 
