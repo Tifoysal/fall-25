@@ -28,10 +28,11 @@ class ProductController extends Controller
     {
        
 
-        $fileName='';
+        $fileName ='';
+        
         if($request->hasFile('image')){
-            $file=$request->file('image');
-            $fileName= date('Ymdhis').$file->getClientOriginalName();
+            $file = $request->file('image');
+            $fileName = date('Ymdhis').$file->getClientOriginalName();
             $file->storeAs('/products', $fileName);
         }
 
@@ -42,7 +43,7 @@ class ProductController extends Controller
             'price' => $request->product_price,
             'stock' => $request->product_stock,
             'stock' => $request->product_stock,
-            'image' =>$fileName
+            'image' => $fileName
        ]);
 
        notify()->success()->title('⚡️ Product Created Successfully.')->send();
