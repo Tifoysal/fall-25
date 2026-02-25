@@ -26,6 +26,14 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
+       
+
+        $fileName='';
+        if($request->hasFile('image')){
+            $file=$request->file('image');
+            $fileName= date('Ymdhis').$file->getClientOriginalName();
+            $file->storeAs('/products', $fileName);
+        }
 
        Product::create([
             'name' => $request->product_name,
@@ -34,6 +42,7 @@ class ProductController extends Controller
             'price' => $request->product_price,
             'stock' => $request->product_stock,
             'stock' => $request->product_stock,
+            'image' =>$fileName
        ]);
 
        notify()->success()->title('⚡️ Product Created Successfully.')->send();

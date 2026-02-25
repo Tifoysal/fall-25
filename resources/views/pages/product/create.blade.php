@@ -5,7 +5,7 @@
 
 <!-- name ,status, image, description -->
 
-<form action="{{route('product.store')}}" method="post">
+<form action="{{route('product.store')}}" method="post" enctype="multipart/form-data">
 
 @csrf
 

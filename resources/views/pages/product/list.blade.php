@@ -13,6 +13,7 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col"> Product Name</th>
+        <th scope="col"> Image</th>
         <th scope="col"> Category Name</th>
         <th scope="col"> Description</th>
         <th scope="col"> Price</th>
@@ -28,6 +29,9 @@
       <tr>
         <th scope="row">{{$singleProduct->id}}</th>
         <td>{{$singleProduct->name}}</td>
+        <td>
+          <img width="100px" src="{{url('/products/'.$singleProduct->image)}}" alt="test">
+        </td>
         <td>{{$singleProduct->category_id}}</td>
         <td>{{$singleProduct->description}}</td>
         <td>{{$singleProduct->price}}</td>
